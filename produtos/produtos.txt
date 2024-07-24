@@ -1,0 +1,7 @@
+Nome, Codigo, Preco, Estoque
+Picanha,538,60.00,15
+File Mignon,100.00,100,3
+Asinha,330,14.00,10
+Maminha,210,26.00,12
+Alcatra,620,37.00,10
+Linguica,550,23.00,10

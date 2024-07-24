@@ -1,0 +1,6 @@
+Nome, Nivel, Id, Senha, Email
+Sofia,Gerente,4,456,sofia@gmail.com
+Fabio Faria,Gerente,2,789,fabio@gmail.com
+Marcos,Gerente,7,123,marcos@gmail.com
+Sabrina,Funcionario,8,123,sabrina@gmail.com
+Marcelo,Funcionario,9,123,marcelo@gmail.com
