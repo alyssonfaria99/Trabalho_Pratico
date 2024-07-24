@@ -1,6 +1,10 @@
 Nome, Nivel, Id, Senha, Email
 Sofia,Gerente,4,456,sofia@gmail.com
 Fabio Faria,Gerente,2,789,fabio@gmail.com
-Marcos,Gerente,7,123,marcos@gmail.com
 Sabrina,Funcionario,8,123,sabrina@gmail.com
 Marcelo,Funcionario,9,123,marcelo@gmail.com
+Carlos,Funcionario,66,123,carlos@gmail.com
+Ana,Gerente,88,123,ana@gmail.com
+Monica,Gerente,33,123,monica@gmail.com
+Mauricio,Funcionario,44,123,mauricio@gmail.com
+Galo,Gerente,13,123,galodoido@gmail.com

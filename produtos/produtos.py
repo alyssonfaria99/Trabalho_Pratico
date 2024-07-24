@@ -23,6 +23,7 @@ def listarPorCodigo():
             print(f'Produto: {produto['Nome']}, Preço: {produto['Preco']}, Estoque: {produto['Estoque']} ')
             return
     print('Produto não encontrado.')
+    return 
 
 def adicionarProduto():
     caminho_relativo = 'produtos/produtos.txt'

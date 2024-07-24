@@ -39,21 +39,25 @@ def criarUsuario():
     usuariostxt = open(caminho_absoluto,'a')
     usuariostxt.write(f'{nome},{nivel},{id},{senha},{email}\n')
     usuariostxt.close()
+    return
 
 def listarUsuarios():
+    # lê o arquivo de usuarios e printa o nome e nível de todos os usuários. Não retorna nada
     caminho_relativo = 'usuarios/usuarios.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
     usuarios = ler_arquivo_txt(caminho_absoluto)
     for usuario in usuarios:
         print(f'Nome:{usuario['Nome']}, Nível: {usuario['Nivel']}')
+    return
 
 def atualizarUsuario(email, id, nivel):
+    # permite atualizar o nome e a senha do seu proprio usuario
     novoNome = input('Novo nome: ')
     novaSenha = input('Nova senha: ')
     caminho_relativo = 'usuarios/usuarios.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
 
-    # excluindo o usuario
+    # excluindo o usuario antigo
     usuariostxt = open(caminho_absoluto, 'r')
     linhas = usuariostxt.readlines()
     cabecalhos = linhas[0]
@@ -70,7 +74,9 @@ def atualizarUsuario(email, id, nivel):
     escreverTxt.close()
     return
 
-def excluirUsuario(email):
+def excluirUsuario():
+    # exclui um usuario baseando em seu email (já que é o único campo que tem validação de unicidade)
+    email = input('Email do usuário a ser excluído: ')
     caminho_relativo = 'usuarios/usuarios.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
     usuariostxt = open(caminho_absoluto, 'r')
