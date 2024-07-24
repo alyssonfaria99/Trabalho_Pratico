@@ -2,6 +2,8 @@ from login import realizarLogin
 from usuarios.usuarios import criarUsuario
 from menu import irParaMenu
 
+# funcionamento geral do programa, execute este arquivo
+
 cadastrado = input(' 1 - Login\n 2 - Cadastre-se\n')
 if cadastrado == '1':
     logado = realizarLogin()

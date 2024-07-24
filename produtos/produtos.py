@@ -14,6 +14,7 @@ def ler_arquivo_produtos(caminho_arquivo):
     return dados
 
 def listarPorCodigo():
+    # recebe o codigo do produto e printa as informacoes deste
     caminho_relativo = 'produtos/produtos.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
     produtos = ler_arquivo_produtos(caminho_absoluto)
@@ -26,6 +27,7 @@ def listarPorCodigo():
     return 
 
 def adicionarProduto():
+    # recebe os atributos do produto e o adiciona ao arquivo produtos.txt
     caminho_relativo = 'produtos/produtos.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
     nome = input('Nome: ')
@@ -38,6 +40,7 @@ def adicionarProduto():
     return
 
 def excluirProduto():
+    # recebe o codigo do produto a ser excluido e o exclui do arquivo produtos.txt
     codigo = input('Código do produto a ser excluído: ')
     caminho_relativo = 'produtos/produtos.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
@@ -55,6 +58,7 @@ def excluirProduto():
     return
 
 def atualizarProduto():
+    # recebe as novas informacoes do produto, exlcui o antigo e adiciona o novo
     codigo = input('Código do produto a ser atualizado:')
     novoNome = input('Novo nome: ')
     novoPreco = input('Novo preço: ')
@@ -81,6 +85,7 @@ def atualizarProduto():
     return
 
 def listarPorNomes():
+    # lista os produtos em ordem alfabetica
     caminho_relativo = 'produtos/produtos.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
     produtos = ler_arquivo_produtos(caminho_absoluto)
@@ -90,6 +95,7 @@ def listarPorNomes():
     return
 
 def listarPorPrecos():
+    # lista os produtos em ordem de preco
     caminho_relativo = 'produtos/produtos.txt'
     caminho_absoluto = os.path.abspath(caminho_relativo)
     produtos = ler_arquivo_produtos(caminho_absoluto)
